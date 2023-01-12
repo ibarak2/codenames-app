@@ -1,0 +1,30 @@
+// Colors
+$clr1: #ffffff;
+$clr2: #c4fffe;
+$clr3: #79c8c7;
+$clr4: #2c6269;
+$clr5: #014e56;
+$clr6: #012f34;
+$clr7: #f67e7e;
+
+// Breakpoints
+$mobile-breakpoint: 600px;
+$narrow-breakpoint: 900px;
+$normal-breakpoint: 1160px;
+
+$grid_gutters: (
+  xs: 6px,
+  sm: 8px,
+  md: 8px,
+  lg: 16px,
+  xl: 16px,
+);
+
+$grid_layouts: 12, 15;
+$grid_breakpoints: "sm", "md", "lg", "xl";
+
+$page_max_width: 1400px;
+$padding_min: 24px;
+$padding_min_double: 48px;
+$padding_max: 32px;
+$padding_max_double: 64px;
