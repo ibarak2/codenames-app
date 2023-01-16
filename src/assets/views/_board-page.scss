@@ -1,0 +1,135 @@
+.board-page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("../../../public/images/codenames-board-wallpaper.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  overflow-x: hidden;
+  h1 {
+    font-size: 3em;
+    padding-top: 2vh;
+  }
+  .board-status {
+    margin-top: 2em;
+    margin-left: 0.7em;
+    margin-right: 0.7em;
+    // width: 85vw;
+
+    @media (min-width: 850px) {
+      width: 80vw;
+      margin-left: 13%;
+    }
+
+    @media (min-width: 1367px) {
+      margin-top: 3.5em;
+    }
+  }
+
+  .end-turn-btn {
+    background-color: azure;
+    color: black;
+    padding: 0.5em 1em;
+    border-radius: 6px;
+
+    &:hover {
+      background-color: darken($color: azure, $amount: 5%);
+      box-shadow: 3px 5px 10px -3px #2c2c2c;
+    }
+
+    @media (min-width: 850px) {
+      padding: 1em 2em;
+    }
+  }
+
+  .board-words {
+    margin: 0.5em;
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-row-gap: 0.5em;
+
+    @media (min-width: 850px) {
+      max-width: 70%;
+      margin-left: 17%;
+      grid-row-gap: 1em;
+    }
+
+    @media (min-width: 1367px) {
+      margin-top: 1.5em;
+      grid-row-gap: 2em;
+    }
+
+    .word-item {
+      font-size: 0.75em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      height: 10vh;
+      margin: auto;
+      background-color: #f2eaea;
+      border-radius: 16px;
+      box-shadow: 3px 5px 10px -3px #2c2c2c;
+      transition: all, 0.1s;
+
+      @media (min-width: 850px) {
+        font-size: 1.25em;
+      }
+
+      @media (min-width: 1367px) {
+        font-size: 1.7em;
+      }
+
+      &:hover {
+        cursor: pointer;
+        box-shadow: 5px 8px 10px -3px #2c2c2c;
+      }
+    }
+  }
+  .board-options {
+    width: 100%;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    justify-content: space-between;
+    flex-direction: column;
+
+    @media (min-width: 850px) {
+      margin-top: 0;
+      flex-direction: row;
+      width: 69%;
+      margin-left: 13%;
+    }
+
+    & p {
+      font-size: 1.5em;
+      margin: 0;
+      @media (min-width: 1367px) {
+        margin-top: 1em;
+      }
+    }
+    & button {
+      margin-top: 1em;
+      background-color: azure;
+      color: black;
+      border-radius: 6px;
+    }
+  }
+}
+
+.selected {
+  background-color: darken($color: azure, $amount: 5%);
+}
+
+.red-text {
+  color: red;
+}
+.blue-text {
+  color: blue;
+}
