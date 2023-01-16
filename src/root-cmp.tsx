@@ -6,7 +6,7 @@ import { BoardPage } from "./pages/board-page"
 function App() {
 
   return (
-    <div>
+    <main className="main-content">
       <Routes>
         <Route 
           key={'Home'}
@@ -19,7 +19,7 @@ function App() {
           path={'/board/:id'}
         />
       </Routes>
-    </div>
+    </main>
   )
 }
 
